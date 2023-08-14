@@ -15,7 +15,7 @@ const Uses = (props: Props) => {
           <p className='  '>
             Indoor navigation is not limited to any one business or industry.
             Building managers worldwide are realizing how the technology
-            benefits staff and visitors alike while increasing overall workplace
+            benefits <span className="text-customGreen"> staff and visitors </span>alike while increasing overall workplace
             efficiency. Here are a few common examples:
           </p>
         </div>
@@ -64,9 +64,9 @@ const UseCard = (props: UseCardProps) => {
   const size = 70;
   return (
     <div className='flex flex-col space-y-4 '>
-      {props.isHospital && <HeartPulse size={size} />}
-      {props.isEnterprise && <Store size={size} />}
-      {props.isRetail && <Building2 size={size} />}
+      {props.isHospital && <HeartPulse className="text-customGreen" size={size} />}
+      {props.isEnterprise && <Store className="text-customGreen"size={size} />}
+      {props.isRetail && <Building2 className="text-customGreen"size={size} />}
       <div className='flex w-96 flex-col'>
         <span className='font-semibold'>{props.title}</span>
         <span>{props.description}</span>
