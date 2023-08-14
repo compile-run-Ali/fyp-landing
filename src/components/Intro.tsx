@@ -10,6 +10,7 @@ const Intro = (props: Props) => {
   return (
     <div className='    '>
         {/* <NavBar/> */}
+        
         <div className="flex items-center justify-between  space-x-20 h-screen ">
       <div className='w-7/12 flex-col space-y-8'>
         <p className=" text-6xl font-bold">Get more from physical spaces with indoor navigation</p>
