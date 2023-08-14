@@ -8,7 +8,7 @@ import {
 export default function FAQ() {
   return (
     <div className='h-screen w-full '>
-      <h1 className="text-white text-center text-8xl mb-10">FAQ</h1>
+      <h1 className=" text-center text-8xl mb-10">FAQ</h1>
 <div className="mx-32 flex flex-row items-center ">
       <Accordian />
 </div>

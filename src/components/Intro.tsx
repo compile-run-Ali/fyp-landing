@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import NavBar from "./NavBar";
 
+import { Button } from "@/components/ui/button"
+
 type Props = {};
 
 const Intro = (props: Props) => {
@@ -16,8 +18,8 @@ const Intro = (props: Props) => {
           digital indoor navigation tools make buildings more accessible and
           productive than ever before.
         </p>{" "}
-        <button className="bg-blue-800 rounded-full text-lg font-semibold px-4 py-2 hover:brightness-75 
-        ">Request a demo</button>
+     <Button variant="default">Request a Demo</Button>
+
       </div>
       <div className=" relative "><Image alt="indoor navigation"className="rounded-xl hover:brightness-90" width={460} height={450}  src="/images/indoor-navigation-intro.jpg"/></div>
 </div>
