@@ -28,7 +28,7 @@ const Uses = (props: Props) => {
           />
         </div>
       </div>
-      <div className='flex flex-row justify-between  '>
+      <div className='flex flex-row justify-between   '>
         <UseCard
           title='Hospitals'
           description='Visitors, patients, and staff can benefit when hospitals and medical facilities implement indoor navigation. Along with helping patients reach treatment rooms, cafeterias, or other facilities, rapid response teams can gain directions to priority areas during an emergency. Integrating navigation with other building systems can freeze elevators for priority traffic if required.'
@@ -67,7 +67,7 @@ const UseCard = (props: UseCardProps) => {
       {props.isHospital && <HeartPulse className="text-customGreen" size={size} />}
       {props.isEnterprise && <Store className="text-customGreen"size={size} />}
       {props.isRetail && <Building2 className="text-customGreen"size={size} />}
-      <div className='flex w-96 flex-col'>
+      <div className='flex w-80 flex-col'>
         <span className='font-semibold'>{props.title}</span>
         <span>{props.description}</span>
       </div>
