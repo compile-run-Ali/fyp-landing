@@ -1,4 +1,6 @@
+'use client'
 import FAQ from '@/components/FAQ'
+
 import Info from '@/components/Info'
 import Intro from '@/components/Intro'
 import NavBar from '@/components/NavBar'

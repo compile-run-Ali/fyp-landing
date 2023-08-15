@@ -75,7 +75,29 @@
     @apply border-border;
   }
   body {
-  overflow-x: hidden;
-    @apply bg-background text-foreground ;
+    overflow-x: hidden;
+    @apply bg-background text-foreground;
   }
+}
+
+.hidden-css {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-40%);
+}
+
+.show-css {
+  transform: translateX(0);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1s;
+  opacity: 1;
+  filter: blur(0);
+}
+
+.logo:nth-child(2) {
+  transition-delay: 0.8s;
+}
+.logo:nth-child(3) {
+  transition-delay: 1.6s;
 }

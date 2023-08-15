@@ -1,14 +1,25 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { LocateOff, Map, Compass } from "lucide-react";
 
+import { useInView } from "react-intersection-observer";
 type Props = {};
 
 const Info = (props: Props) => {
+  const { ref, inView } = useInView({
+    threshold: 0.7,
+    triggerOnce: true,
+  });
+
   return (
-    <div className=' mb-40  rounded-3xl text-black'>
+    <div
+      ref={ref}
+      className={`transition-all  ${inView ? 'show-css ' : 'hidden-css'} mb-40  rounded-3xl text-black `}
+    >
       <div className='flex flex-col items-center space-y-10 pt-10'>
-        <div className='flex flex-col items-center space-y-8'>
-          <p className='text-xl'>INDOOR NAVIGATION SYSTEM</p>
+        <div
+         className='flex flex-col items-center space-y-8'>
+          <p  
+          className='text-xl'>INDOOR NAVIGATION SYSTEM</p>
           <p className='text-5xl font-bold'>What is Indoor navigation?</p>
 
           <p className='w-6/12  text-center text-lg'>
@@ -42,7 +53,7 @@ const Info = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
+ </div>   
   );
 };
 

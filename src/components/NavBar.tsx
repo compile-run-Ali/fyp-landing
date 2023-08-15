@@ -55,7 +55,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function NavigationMenuDemo() {
   return (
-    <div className="flex-row justify-center bg-black rounded-2xl py-6 -mx-40  flex ">
+    <div className="flex-row justify-center bg-black rounded-b-3xl py-6 -mx-32 shadow-2xl  flex ">
       <NavigationMenu className="w-full flex justify-center flex-row dark text-white">
         <NavigationMenuList>
           <NavigationMenuItem>
