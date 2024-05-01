@@ -14,15 +14,24 @@ import Navigation from '@/components/Navigation'
 
 export default function Home() {
   return (
-    <div className='w-full bg-[#d8f4f4]'>
+    <div className='w-full bg-[#fdfcf5] px-10 xl:px-20'>
       {/* <NavBar/> */}
       <Header/>
       <Hero />
+      <hr/>
       {/* <Intro/> */}
       <Info/>
+      <hr/>
+
       <Methodology />
+      <hr/>
+
       <Uses/>
+      <hr/>
+
       <Navigation />
+      <hr/>
+
       {/* <About /> */}
       <Technologies />
       {/* <FAQ/> */}

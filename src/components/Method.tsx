@@ -12,7 +12,7 @@ import Image from "next/image";
 export default function Methodology(){
     return(
         <div id="method" className="flex flex-row px-14 pt-24 pb-20 space-x-6">
-            <div className="w-5/5 flex flex-col">
+            <div className="w-full flex flex-col">
                 <h1 className="text-[#380c7c] font-bold text-5xl mb-5 text-center">Methodology</h1>
                 <p className="mb-8 text-[#033865] text-center">The application core functionality depends upon the following components which allow indoor physical spaces to be mapped and navigated with the help of interactive AR elements.</p>
                 <div className="w-full flex flex-row items-center space-x-5">

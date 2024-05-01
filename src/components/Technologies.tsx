@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Technologies(){
     return(
-        <div id="tech" className="flex flex-col items-start space-y-4 px-14 py-10">
+        <div id="tech" className="flex flex-col items-start space-y-4 px-14 py-20">
             <h1 className="text-5xl text-[#380c7c] font-bold text-center w-full">Technologies</h1>
             <p className="text-center text-[#033865] w-full">Following technologies and tools have been used to develop the Wander application.</p>
             <div className="flex flex-row h-28 space-x-8 pl-16">
