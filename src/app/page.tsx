@@ -10,10 +10,11 @@ import Hero from '@/components/Hero'
 import Technologies from '@/components/Technologies'
 import Methodology from '@/components/Method'
 import About from '@/components/About'
+import Navigation from '@/components/Navigation'
 
 export default function Home() {
   return (
-    <div className='w-full'>
+    <div className='w-full bg-[#d8f4f4]'>
       {/* <NavBar/> */}
       <Header/>
       <Hero />
@@ -21,7 +22,8 @@ export default function Home() {
       <Info/>
       <Methodology />
       <Uses/>
-      <About />
+      <Navigation />
+      {/* <About /> */}
       <Technologies />
       {/* <FAQ/> */}
     </div>

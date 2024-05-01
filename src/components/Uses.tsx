@@ -13,13 +13,13 @@ const Uses = (props: Props) => {
     <div id="scope" className={`mb-20 px-14 pt-32`}>
       <div ref={ref} className={`${inView ? "show-css " : "hidden-css"} mb-32 flex flex-row justify-between`}>
         <div className='flex max-w-md flex-col'>
-          <p className='text-sm mb-8'>INDOOR NAVIGATION MARKET</p>
-          <p className='text-5xl font-bold mb-6'>Who uses indoor navigation?</p>
+          <p className='text-sm mb-8 text-[#033865]'>INDOOR NAVIGATION MARKET</p>
+          <p className='text-5xl text-[#380c7c] font-bold mb-6'>Who uses indoor navigation?</p>
           <p className=''>
             Indoor navigation is not limited to any one business or industry.
             Building managers worldwide are realizing how the technology
             benefits{" "}
-            <span className='text-customGreen'> staff and visitors </span>alike
+            <span className='text-[#b81cd4]'> staff and visitors </span>alike
             while increasing overall workplace efficiency. Here are a few common
             examples:
           </p>
@@ -80,12 +80,12 @@ const UseCard = (props: UseCardProps) => {
 
   return (
     <div ref={ref} style={{ transitionDelay: props.index * 0.3 + "s" }} className={`${inView ? "show-css " : "hidden-css"} flex flex-col space-y-4 w-1/3 items-center`}>
-        {props.isHospital && <HeartPulse className='text-customGreen' size={size} />}
-        {props.isEnterprise && <Store className='text-customGreen' size={size} />}
-        {props.isRetail && <Building2 className='text-customGreen' size={size} />}
+        {props.isHospital && <HeartPulse className='text-[#b81cd4]' size={size} />}
+        {props.isEnterprise && <Store className='text-[#b81cd4]' size={size} />}
+        {props.isRetail && <Building2 className='text-[#b81cd4]' size={size} />}
         <div className='flex flex-col space-y-3'>
-          <span className='font-semibold text-center'>{props.title}</span>
-          <span className="text-justify">{props.description}</span>
+          <span className='font-semibold text-[#380c7c] text-center'>{props.title}</span>
+          <span className="text-justify text-[#033865]">{props.description}</span>
         </div>
     </div>
   );
