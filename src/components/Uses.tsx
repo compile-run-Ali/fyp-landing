@@ -10,21 +10,12 @@ const Uses = (props: Props) => {
     triggerOnce: true,
   });
   return (
-    <div
-      className={`
-    mb-20`}
-    >
-      <div
-        ref={ref}
-        className={`${
-          inView ? "show-css " : "hidden-css"
-        } mb-32 flex flex-row justify-between  `}
-      >
-        <div className='flex max-w-md  flex-col space-y-8'>
-          <p className='text-xl'>INDOOR NAVIGATION MARKET</p>
-          <p className='text-5xl font-bold'>Who uses indoor navigation?</p>
-
-          <p className='  '>
+    <div id="scope" className={`mb-20 px-14 pt-32`}>
+      <div ref={ref} className={`${inView ? "show-css " : "hidden-css"} mb-32 flex flex-row justify-between`}>
+        <div className='flex max-w-md flex-col'>
+          <p className='text-sm mb-8'>INDOOR NAVIGATION MARKET</p>
+          <p className='text-5xl font-bold mb-6'>Who uses indoor navigation?</p>
+          <p className=''>
             Indoor navigation is not limited to any one business or industry.
             Building managers worldwide are realizing how the technology
             benefits{" "}
@@ -42,7 +33,7 @@ const Uses = (props: Props) => {
           />
         </div>
       </div>
-      <div className=' logo flex flex-row justify-between   '>
+      <div className='logo flex flex-row justify-between space-x-20'>
         <UseCard
           index={1}
           title='Hospitals'
@@ -86,23 +77,34 @@ const UseCard = (props: UseCardProps) => {
     threshold: 0.7,
     triggerOnce: true,
   });
+
   return (
-    <div
-      ref={ref}
-      style={{ transitionDelay: props.index * 0.3 + "s" }}
-      className={`
-      ${inView ? "show-css " : "hidden-css"} 
-      flex flex-col space-y-4   `}
-    >
-      {props.isHospital && (
-        <HeartPulse className='text-customGreen' size={size} />
-      )}
-      {props.isEnterprise && <Store className='text-customGreen' size={size} />}
-      {props.isRetail && <Building2 className='text-customGreen' size={size} />}
-      <div className='flex w-80 flex-col'>
-        <span className='font-semibold'>{props.title}</span>
-        <span>{props.description}</span>
-      </div>
+    <div ref={ref} style={{ transitionDelay: props.index * 0.3 + "s" }} className={`${inView ? "show-css " : "hidden-css"} flex flex-col space-y-4 w-1/3 items-center`}>
+        {props.isHospital && <HeartPulse className='text-customGreen' size={size} />}
+        {props.isEnterprise && <Store className='text-customGreen' size={size} />}
+        {props.isRetail && <Building2 className='text-customGreen' size={size} />}
+        <div className='flex flex-col space-y-3'>
+          <span className='font-semibold text-center'>{props.title}</span>
+          <span className="text-justify">{props.description}</span>
+        </div>
     </div>
   );
+
+  // return (
+  //   <div
+  //     ref={ref}
+  //     style={{ transitionDelay: props.index * 0.3 + "s" }}
+  //     className={`
+  //     ${inView ? "show-css " : "hidden-css"} 
+  //     flex flex-col space-y-4 items-center`}
+  //   >
+  //     {props.isHospital && <HeartPulse className='text-customGreen' size={size} />}
+  //     {props.isEnterprise && <Store className='text-customGreen' size={size} />}
+  //     {props.isRetail && <Building2 className='text-customGreen' size={size} />}
+  //     <div className='flex w-80 flex-col'>
+  //       <span className='font-semibold'>{props.title}</span>
+  //       <span>{props.description}</span>
+  //     </div>
+  //   </div>
+  // );
 };
