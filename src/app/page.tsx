@@ -11,6 +11,7 @@ import Technologies from '@/components/Technologies'
 import Methodology from '@/components/Method'
 import About from '@/components/About'
 import Navigation from '@/components/Navigation'
+import Content from '@/components/Content'
 
 export default function Home() {
   return (
@@ -31,7 +32,8 @@ export default function Home() {
 
       <Navigation />
       <hr/>
-
+      <Content />
+      <hr/>
       {/* <About /> */}
       <Technologies />
       {/* <FAQ/> */}
