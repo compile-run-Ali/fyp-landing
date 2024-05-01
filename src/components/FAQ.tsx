@@ -19,6 +19,7 @@ export default function FAQ() {
 const Accordian = () => {
   return (
     <Accordion type='single' collapsible className='w-full text-2xl'>
+      <div id="hello"><h1 className="text-3xl font-bold">Hello world</h1></div>
       <AccordionItem value='item-1'>
         <AccordionTrigger>
           What devices are compatible with the Indoor Navigation AR App?

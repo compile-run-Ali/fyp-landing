@@ -55,10 +55,11 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function NavigationMenuDemo() {
   return (
-    <div className="flex-row justify-center bg-black rounded-b-3xl py-6 -mx-32 shadow-2xl  flex ">
-      <NavigationMenu className="w-full flex justify-center flex-row dark text-white">
+    <div className="flex flex-row justify-center bg-black py-5 border border-red-500">
+      <NavigationMenu className="w-full flex justify-center flex-row dark text-white border border-red-500">
         <NavigationMenuList>
           <NavigationMenuItem>
+          <a href="#hello">Hello world</a>
             <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
