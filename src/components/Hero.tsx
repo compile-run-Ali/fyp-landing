@@ -17,7 +17,7 @@ export default function Hero(){
                 }/>
                 {/* <h1 className="text-5xl font-bold">Revolutionalize your indoor navigation with Wander</h1> */}
                 {/* <p>Providing indoor navigation through Augmented Reality & VPS technology, placing virtual pointers & markers in real time on phone displays.</p> */}
-                <button className="bg-[#00a8ba] transition ease-in-out hover:bg-white hover:underline text-xs text-black font-medium px-3 py-2">Request a Demo</button>
+                <a href="mailto:aabdullah.bscs20seecs@seecs.edu.pk" className="bg-[#00a8ba] transition ease-in-out hover:bg-white hover:underline text-xs text-black font-medium px-3 py-2">Request a Demo</a>
             </div>
             <div className="w-2/5 flex flex-col items-end justify-start px-14 mt-16">
                 <Image src="/images/indoor-navigation-intro.jpg" width={400} height={400} alt='App Screenshot' className='rounded contrast-75 brightness-105 hover:brightness-100'/>

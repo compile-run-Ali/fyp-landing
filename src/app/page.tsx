@@ -7,6 +7,7 @@ import NavBar from '@/components/NavBar'
 import Uses from '@/components/Uses'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import Technologies from '@/components/Technologies'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       {/* <Intro/> */}
       <Info/>
       <Uses/>
+      <Technologies />
       <FAQ/>
     </div>
   )
