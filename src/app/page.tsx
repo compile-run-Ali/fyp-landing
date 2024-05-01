@@ -8,6 +8,8 @@ import Uses from '@/components/Uses'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Technologies from '@/components/Technologies'
+import Methodology from '@/components/Method'
+import About from '@/components/About'
 
 export default function Home() {
   return (
@@ -17,9 +19,11 @@ export default function Home() {
       <Hero />
       {/* <Intro/> */}
       <Info/>
+      <Methodology />
       <Uses/>
+      <About />
       <Technologies />
-      <FAQ/>
+      {/* <FAQ/> */}
     </div>
   )
 }

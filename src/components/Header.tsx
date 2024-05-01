@@ -8,11 +8,11 @@ export default function Header(){
             </div>
             <div className="w-4/5 font-semibold text-sm flex flex-row space-x-7 justify-end items-center">
                 <div><a href="#intro">Introduction</a></div>
-                <div>Methodology</div>
+                <div><a href="#method">Methodology</a></div>
                 <div><a href="#scope">Scope</a></div>
-                <div>Technology</div>
+                <div><a href="#tech">Technology</a></div>
                 <div>Gallery</div>
-                <div>About Us</div>
+                <div><a href="#about">About Us</a></div>
             </div>
         </div>
     )

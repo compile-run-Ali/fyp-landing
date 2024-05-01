@@ -3815,6 +3815,11 @@ react-dom@*, "react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^17.x || ^18.x", re
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-icons@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.npmjs.org/react-icons/-/react-icons-5.2.0.tgz"
+  integrity sha512-n52Y7Eb4MgQZHsSZOhSXv1zs2668/hBYKfSRIvKh42yExjyhZu0d1IK2CLLZ3BZB1oo13lDfwx2vOh2z9FTV6Q==
+
 react-intersection-observer@^9.5.2:
   version "9.5.2"
   resolved "https://registry.npmjs.org/react-intersection-observer/-/react-intersection-observer-9.5.2.tgz"

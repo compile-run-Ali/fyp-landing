@@ -13,8 +13,8 @@ const Info = (props: Props) => {
   return (
     <div
       ref={ref}
-      className={`transition-all  ${inView ? 'show-css ' : 'hidden-css'} text-black px-14`}>
-      <div className='flex flex-col items-center space-y-10 py-10'>
+      className={`transition-all  ${inView ? 'show-css ' : 'hidden-css'} text-black px-16`}>
+      <div className='flex flex-col items-center space-y-10 py-16'>
         <div
          className='flex flex-col items-center space-y-8'>
           <p  
