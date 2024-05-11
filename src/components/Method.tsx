@@ -66,7 +66,7 @@ export default function Methodology() {
   );
 }
 
-function MethodologyItem({ number, title, description }) {
+function MethodologyItem({ number, title, description }: { number: React.ReactNode; title: string; description: string }) {
   return (
     <div className="flex flex-col items-center lg:items-start space-y-2 rounded-lg border border-[#380c7c] bg-[#e6f4ff] px-5 py-3 lg:w-auto">
       {number}
