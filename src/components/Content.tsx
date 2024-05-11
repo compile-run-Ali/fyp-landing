@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Content() {
   return (
-    <div className="show-css mb-32 flex flex-row justify-between space-x-20 px-20 pt-10">
-      <div className="flex flex-col my-auto">
+    <div className="show-css mb-32 flex flex-row justify-between lg:space-x-20 lg:px-20 pt-10">
+      <div className="flex flex-col my-auto text-center lg:text-left">
         <p className="mb-6 text-5xl font-bold text-[#380c7c]">
           Content Placement
         </p>
@@ -17,7 +17,7 @@ export default function Content() {
       </div>
       <Image
         alt="woman holding phone"
-        className="rounded-2xl object-cover"
+        className="rounded-2xl object-cover lg:block hidden"
         src="/images/catto.jpeg"
         height={400}
         width={250}

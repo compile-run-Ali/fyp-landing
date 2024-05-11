@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Navigation(){
     return(
-        <div id="nav" className="flex flex-col px-14 pt-16 pb-20">
+        <div id="nav" className="lg:flex hidden flex-col px-14 pt-16 pb-20 ">
             <div>
                 <h1 className="text-[#380c7c] font-bold text-5xl mb-5 text-center">Navigation in Real Time</h1>
                 {/* <p className="mb-8 text-[#033865] text-center">Following are some screenshots of our application in action.</p> */}

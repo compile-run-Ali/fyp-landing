@@ -12,6 +12,8 @@ import Methodology from '@/components/Method'
 import About from '@/components/About'
 import Navigation from '@/components/Navigation'
 import Content from '@/components/Content'
+import Footer from '@/components/Footer'
+import ScrollToTopButton from '@/components/ToTop'
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
       {/* <NavBar/> */}
       <Header/>
       <Hero />
+      <ScrollToTopButton />
       <hr/>
       {/* <Intro/> */}
       <Info/>
@@ -37,6 +40,7 @@ export default function Home() {
       {/* <About /> */}
       <Technologies />
       {/* <FAQ/> */}
+      <Footer />
     </div>
   )
 }

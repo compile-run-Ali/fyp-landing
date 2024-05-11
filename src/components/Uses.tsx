@@ -10,9 +10,9 @@ const Uses = (props: Props) => {
     triggerOnce: true,
   });
   return (
-    <div id="scope" className={`mb-20 px-14 pt-32`}>
+    <div id="scope" className={`mb-20 lg:px-14 pt-32`}>
       <div ref={ref} className={`${inView ? "show-css " : "hidden-css"} mb-32 flex flex-row justify-between`}>
-        <div className='flex max-w-md flex-col'>
+        <div className='flex lg:max-w-md flex-col text-center lg:text-left'>
           <p className='text-sm mb-8 text-[#033865]'>INDOOR NAVIGATION MARKET</p>
           <p className='text-5xl text-[#380c7c] font-bold mb-6'>Who uses indoor navigation?</p>
           <p className=''>
@@ -24,7 +24,7 @@ const Uses = (props: Props) => {
             examples:
           </p>
         </div>
-        <div className='relative h-[400px] w-[600px] '>
+        <div className='relative h-[400px] w-[600px] lg:block hidden'>
           <Image
             fill
             alt='woman holding phone'
@@ -33,7 +33,7 @@ const Uses = (props: Props) => {
           />
         </div>
       </div>
-      <div className='logo flex flex-row justify-between space-x-20'>
+      <div className='logo flex lg:flex-row flex-col lg:justify-between justify-center space-y-20 lg:space-x-20'>
         <UseCard
           index={1}
           title='Hospitals'
@@ -79,32 +79,16 @@ const UseCard = (props: UseCardProps) => {
   });
 
   return (
-    <div ref={ref} style={{ transitionDelay: props.index * 0.3 + "s" }} className={`${inView ? "show-css " : "hidden-css"} flex flex-col space-y-4 w-1/3 items-center`}>
+    <div ref={ref} style={{ transitionDelay: props.index * 0.3 + "s" }} className={`${inView ? "show-css " : "hidden-css"} flex flex-col space-y-4 lg:w-1/3 items-center`}>
         {props.isHospital && <HeartPulse className='text-[#b81cd4]' size={size} />}
         {props.isEnterprise && <Store className='text-[#b81cd4]' size={size} />}
         {props.isRetail && <Building2 className='text-[#b81cd4]' size={size} />}
         <div className='flex flex-col space-y-3'>
           <span className='font-semibold text-[#380c7c] text-center'>{props.title}</span>
-          <span className="text-justify text-[#033865]">{props.description}</span>
+          <span className="lg:text-justify text-center text-[#033865]">{props.description}</span>
         </div>
     </div>
   );
 
-  // return (
-  //   <div
-  //     ref={ref}
-  //     style={{ transitionDelay: props.index * 0.3 + "s" }}
-  //     className={`
-  //     ${inView ? "show-css " : "hidden-css"} 
-  //     flex flex-col space-y-4 items-center`}
-  //   >
-  //     {props.isHospital && <HeartPulse className='text-customGreen' size={size} />}
-  //     {props.isEnterprise && <Store className='text-customGreen' size={size} />}
-  //     {props.isRetail && <Building2 className='text-customGreen' size={size} />}
-  //     <div className='flex w-80 flex-col'>
-  //       <span className='font-semibold'>{props.title}</span>
-  //       <span>{props.description}</span>
-  //     </div>
-  //   </div>
-  // );
+
 };
