@@ -22,9 +22,10 @@ export default function Hero() {
         </h1>
         <button
           onClick={() => {
+            console.log("Download APK")
             const link = document.createElement("a");
-            link.href = "/archive.zip";
-            link.download = "archive.zip";
+            link.href = "/wander.apk";
+            link.download = "wander.apk";
             link.click();
           }}
           className="bg-[#b81cd4] px-3 py-2 text-lg font-semibold text-white transition ease-in-out hover:bg-[#d8f4f4] hover:text-[#b81cd4] hover:underline"
