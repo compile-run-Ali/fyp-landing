@@ -1,15 +1,26 @@
-import Image from "next/image"
+import Image from "next/image";
 
-export default function Navigation(){
-    return(
-        <div id="nav" className="lg:flex hidden flex-col px-14 pt-16 pb-20 ">
-            <div>
-                <h1 className="text-[#380c7c] font-bold text-5xl mb-5 text-center">Navigation in Real Time</h1>
-                {/* <p className="mb-8 text-[#033865] text-center">Following are some screenshots of our application in action.</p> */}
-            </div>
-            <div className="w-full flex justify-center">
-                <Image src={"/images/nav.png"} width={1000} height={100} alt="navigation"/>
-            </div>
-        </div>
-    )
+export default function Content() {
+  return (
+    <div className="show-css lg:space-x-26 mb-32 flex flex-row-reverse justify-between pt-10 lg:px-20">
+      <div className="my-auto flex flex-col text-center lg:text-right lg:p-10">
+        <p className="mb-6 text-5xl font-bold text-[#380c7c]">
+          Navigation in Real Time
+        </p>
+        <p className="">
+          Navigation in The app runs by calculating the best possible path
+          through our algorithm, which is based on the shortest path algorithm.
+          Now you can navigate through the app in real time and reach your
+          destination without any hassle.
+        </p>
+      </div>
+      <Image
+        alt="woman holding phone"
+        className="hidden rounded-2xl object-cover lg:block"
+        src="/images/nav.jpeg"
+        height={400}
+        width={250}
+      />
+    </div>
+  );
 }

@@ -18,7 +18,7 @@ export default function Content() {
       <Image
         alt="woman holding phone"
         className="rounded-2xl object-cover lg:block hidden"
-        src="/images/catto.jpeg"
+        src="/images/cont.jpeg"
         height={400}
         width={250}
       />
